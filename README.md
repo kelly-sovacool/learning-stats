@@ -1,2 +1,2 @@
-# stats-references
-References for learning statistics
+# stats-ref
+A reference for concepts & equations in introductory statistics.
