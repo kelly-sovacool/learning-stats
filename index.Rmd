@@ -1,0 +1,19 @@
+---
+title: "Stats Reference"
+author: "Kelly Sovacool"
+date: "2018-11-18"
+site: bookdown::bookdown_site
+documentclass: book
+#bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: kelly-sovacool/stats-ref
+#url: 'http\://seankross.com/bookdown-start/'
+description: "A reference for concepts & equations in introductory statistics."
+---
+
+# Preface {-}
+
+A reference for concepts & equations in introductory statistics.
+
+I used Sean Kross' [bookdown starter kit](https://github.com/seankross/bookdown-start) to begin creating this R Markdown book.

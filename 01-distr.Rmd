@@ -1,0 +1,21 @@
+# Distributions
+
+
+## Discrete
+| Name            | Notation | Density (PMF/PDF) | Distribution (CDF) | $\mathbb{E}[X]$ | $\text{Var}[X]$ | Notes | Examples |
+| --------------- |---------------|----------|--------------------|--------------------|-----------------|----------|----------|----------|
+| Bernoulli       | $X\sim\text{Bern}(p)$ | \begin{equation} p(x) = \begin{cases} p & x=1 \\ 1-p & x=0 \\ 0 & else \end{cases}\end{equation} | - | $p$ | $p(1-p)$ | - | - |
+| Binomial        | $X\sim\text{Binom}(n,p)$ | $p(k) = \binom{n}{k} p^k (1-p)^{n-k}$ | $\sum_{k=0}^i p(k)$ | $np$ | $np(1-p)$ | - | - |
+| Poisson         | $X\sim\text{Poisson}(\lambda\sim np)$ | $p(k) = e^{-\lambda} \frac{\lambda^k}{k!}$ | - | \( \lambda \) | \( \lambda \) | Approximation to binomial when $n \rightarrow \infty$ and $p \rightarrow 0$. | Number of misprints per page of a book. |
+| Geometric       | $X\sim\text{Geom}(p)$ | $p(k)=(1-p)^{k-1}$ | $F(k)=1-(1-p)^k$ | $\frac{1}{p}$ | $\frac{1-p}{p^2}$ | Memoryless. Experiment with infinite trials; stop at first success. | Flip a coin until heads comes up. |
+
+## Continuous
+
+| Name            | Notation | Density (PMF/PDF) | Distribution (CDF) | $\mathbb{E}[X]$ | $\text{Var}[X]$ | Notes | Examples |
+| --------------- |---------------|----------|--------------------|--------------------|-----------------|----------|----------|----------|
+| Uniform         | $X\sim\text{Unif}(a,b)$ | \begin{equation} f(x) = \begin{cases} \frac{1}{b-a} & x \in [a,b] \\ 0 & \text{else} \end{cases} \end{equation} | \begin{equation} F(x) = \begin{cases} \frac{x-a}{b-a} & x \in [a,b] \\ 0 & \text{else} \end{cases} \end{equation} | $\frac{b+a}{2}$ | $\frac{(b-a)^2}{12}$ | Simplest continuous distribution. All outcomes equally likely. | Pick random point on disk of radius $r$. $x$ is distance to center. $f(x) = \frac{2x}{r^2}$ when $0 \leq x \leq r$ |
+| General Normal  | $X\sim\text{N}(\mu,\sigma)$ | $f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2/2\sigma^2}$ | (convert to standard) | $\mu$ | $\sigma^2$ | - | Biological variables. Exam scores. |
+| Standard Normal | $X\sim\text{N}(0,1)$ | $f(x) = \frac{1}{\sqrt{2\pi}} e^{-(x^2)/2}$ | $\phi(x)$ (use Z table) | $0$ | $1$ | Special case of the normal with no parameters. | - |
+| Exponential     | $X\sim\text{Exp}(\lambda)$ | \begin{equation}f(x)=\begin{cases} \lambda e^{-\lambda x} & x > 0 \\ 0 & else \end{cases} \end{equation} | \begin{equation} F(x) = \begin{cases} 1-e^{-\lambda x} & x > 0 \\ 0 & else \end{cases} \end{equation} | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$ | Memoryless. $\lambda=$ rate. Continuous version of Geom($p$). | - |
+| Gamma | | | | | | | |
+| Chi Square | | | | | | | |

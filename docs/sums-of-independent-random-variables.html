@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stats Reference</title>
+  <meta name="description" content="A reference for concepts &amp; equations in introductory statistics.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Stats Reference" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  <meta name="github-repo" content="kelly-sovacool/stats-ref" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Stats Reference" />
+  
+  <meta name="twitter:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  
+
+<meta name="author" content="Kelly Sovacool">
+
+
+<meta name="date" content="2018-11-18">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="distributions.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Stats Reference</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="distributions.html"><a href="distributions.html"><i class="fa fa-check"></i><b>1</b> Distributions</a><ul>
+<li class="chapter" data-level="1.1" data-path="distributions.html"><a href="distributions.html#discrete"><i class="fa fa-check"></i><b>1.1</b> Discrete</a></li>
+<li class="chapter" data-level="1.2" data-path="distributions.html"><a href="distributions.html#continuous"><i class="fa fa-check"></i><b>1.2</b> Continuous</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html"><i class="fa fa-check"></i><b>2</b> Sums of Independent Random Variables</a><ul>
+<li class="chapter" data-level="2.1" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#uniform"><i class="fa fa-check"></i><b>2.1</b> Uniform</a></li>
+<li class="chapter" data-level="2.2" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#normal"><i class="fa fa-check"></i><b>2.2</b> Normal</a></li>
+<li class="chapter" data-level="2.3" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#gamma"><i class="fa fa-check"></i><b>2.3</b> Gamma</a></li>
+<li class="chapter" data-level="2.4" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#poisson"><i class="fa fa-check"></i><b>2.4</b> Poisson</a></li>
+<li class="chapter" data-level="2.5" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#binomial"><i class="fa fa-check"></i><b>2.5</b> Binomial</a></li>
+<li class="chapter" data-level="2.6" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#geometric"><i class="fa fa-check"></i><b>2.6</b> Geometric</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stats Reference</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sums-of-independent-random-variables" class="section level1">
+<h1><span class="header-section-number">2</span> Sums of Independent Random Variables</h1>
+<p>Convolution (CDF): <span class="math inline">\(F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy\)</span></p>
+<p>Density (PDF): <span class="math inline">\(f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy\)</span></p>
+<div id="uniform" class="section level2">
+<h2><span class="header-section-number">2.1</span> Uniform</h2>
+</div>
+<div id="normal" class="section level2">
+<h2><span class="header-section-number">2.2</span> Normal</h2>
+<p>The sum of <span class="math inline">\(n\)</span> normal RVs <span class="math inline">\(\sum_i^n X_i\)</span> is normally distributed with parameters:</p>
+<p><span class="math inline">\(\mu = \sum_i^n \mu_i\)</span></p>
+<p><span class="math inline">\(\sigma^2 = \sum_i^n \sigma_i^2\)</span></p>
+<p><span class="math inline">\(\sigma = \sqrt{\sum_i^n \sigma_i^2} \neq \sum_i^n \sqrt{\sigma_i^2}\)</span></p>
+</div>
+<div id="gamma" class="section level2">
+<h2><span class="header-section-number">2.3</span> Gamma</h2>
+</div>
+<div id="poisson" class="section level2">
+<h2><span class="header-section-number">2.4</span> Poisson</h2>
+<p><span class="math inline">\(X_1\sim\text{Poisson}(\lambda_1)\)</span></p>
+<p><span class="math inline">\(X_2\sim\text{Poisson}(\lambda_2)\)</span></p>
+<p><span class="math inline">\(Y = X_1+Y_2\)</span></p>
+<p><span class="math inline">\(Y\sim\text{Poisson}(\lambda= \lambda_1 + \lambda_2)\)</span></p>
+<p><span class="math inline">\(\mathbb{P}(X_1+X_2=n) = \frac{1}{n!} e^{-(\lambda_1+\lambda_2)} (\lambda_1 + \lambda_2)^n\)</span></p>
+</div>
+<div id="binomial" class="section level2">
+<h2><span class="header-section-number">2.5</span> Binomial</h2>
+<p><span class="math inline">\(X_1\sim\text{Binom}(n,p)\)</span></p>
+<p><span class="math inline">\(X_2\sim\text{Binom}(m,p)\)</span></p>
+<p><span class="math inline">\(Y = X_1+Y_2\)</span></p>
+<p><span class="math inline">\(Y\sim\text{Binom}(n+m,p)\)</span></p>
+<p><span class="math inline">\(\mathbb{P}(X_1+X_2=k) = \binom{n+m}{k} = \sum_{i=0}^n \binom{n}{i} \binom{m}{k-i}\)</span></p>
+</div>
+<div id="geometric" class="section level2">
+<h2><span class="header-section-number">2.6</span> Geometric</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="distributions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stats Reference</title>
+  <meta name="description" content="A reference for concepts &amp; equations in introductory statistics.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Stats Reference" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  <meta name="github-repo" content="kelly-sovacool/stats-ref" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Stats Reference" />
+  
+  <meta name="twitter:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  
+
+<meta name="author" content="Kelly Sovacool">
+
+
+<meta name="date" content="2018-11-18">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="sums-of-independent-random-variables.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Stats Reference</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="distributions.html"><a href="distributions.html"><i class="fa fa-check"></i><b>1</b> Distributions</a><ul>
+<li class="chapter" data-level="1.1" data-path="distributions.html"><a href="distributions.html#discrete"><i class="fa fa-check"></i><b>1.1</b> Discrete</a></li>
+<li class="chapter" data-level="1.2" data-path="distributions.html"><a href="distributions.html#continuous"><i class="fa fa-check"></i><b>1.2</b> Continuous</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html"><i class="fa fa-check"></i><b>2</b> Sums of Independent Random Variables</a><ul>
+<li class="chapter" data-level="2.1" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#uniform"><i class="fa fa-check"></i><b>2.1</b> Uniform</a></li>
+<li class="chapter" data-level="2.2" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#normal"><i class="fa fa-check"></i><b>2.2</b> Normal</a></li>
+<li class="chapter" data-level="2.3" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#gamma"><i class="fa fa-check"></i><b>2.3</b> Gamma</a></li>
+<li class="chapter" data-level="2.4" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#poisson"><i class="fa fa-check"></i><b>2.4</b> Poisson</a></li>
+<li class="chapter" data-level="2.5" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#binomial"><i class="fa fa-check"></i><b>2.5</b> Binomial</a></li>
+<li class="chapter" data-level="2.6" data-path="sums-of-independent-random-variables.html"><a href="sums-of-independent-random-variables.html#geometric"><i class="fa fa-check"></i><b>2.6</b> Geometric</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stats Reference</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="distributions" class="section level1">
+<h1><span class="header-section-number">1</span> Distributions</h1>
+<div id="discrete" class="section level2">
+<h2><span class="header-section-number">1.1</span> Discrete</h2>
+<table style="width:100%;">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="7%" />
+<col width="15%" />
+<col width="15%" />
+<col width="13%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Notation</th>
+<th>Density (PMF/PDF)</th>
+<th>Distribution (CDF)</th>
+<th><span class="math inline">\(\mathbb{E}[X]\)</span></th>
+<th><span class="math inline">\(\text{Var}[X]\)</span></th>
+<th>Notes</th>
+<th>Examples</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bernoulli</td>
+<td><span class="math inline">\(X\sim\text{Bern}(p)\)</span></td>
+<td><span class="math display">\[\begin{equation} p(x) = \begin{cases} p &amp; x=1 \\ 1-p &amp; x=0 \\ 0 &amp; else \end{cases}\end{equation}\]</span></td>
+<td>-</td>
+<td><span class="math inline">\(p\)</span></td>
+<td><span class="math inline">\(p(1-p)\)</span></td>
+<td>-</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Binomial</td>
+<td><span class="math inline">\(X\sim\text{Binom}(n,p)\)</span></td>
+<td><span class="math inline">\(p(k) = \binom{n}{k} p^k (1-p)^{n-k}\)</span></td>
+<td><span class="math inline">\(\sum_{k=0}^i p(k)\)</span></td>
+<td><span class="math inline">\(np\)</span></td>
+<td><span class="math inline">\(np(1-p)\)</span></td>
+<td>-</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Poisson</td>
+<td><span class="math inline">\(X\sim\text{Poisson}(\lambda\sim np)\)</span></td>
+<td><span class="math inline">\(p(k) = e^{-\lambda} \frac{\lambda^k}{k!}\)</span></td>
+<td>-</td>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td>Approximation to binomial when <span class="math inline">\(n \rightarrow \infty\)</span> and <span class="math inline">\(p \rightarrow 0\)</span>.</td>
+<td>Number of misprints per page of a book.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Geometric</td>
+<td><span class="math inline">\(X\sim\text{Geom}(p)\)</span></td>
+<td><span class="math inline">\(p(k)=(1-p)^{k-1}\)</span></td>
+<td><span class="math inline">\(F(k)=1-(1-p)^k\)</span></td>
+<td><span class="math inline">\(\frac{1}{p}\)</span></td>
+<td><span class="math inline">\(\frac{1-p}{p^2}\)</span></td>
+<td>Memoryless. Experiment with infinite trials; stop at first success.</td>
+<td>Flip a coin until heads comes up.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="continuous" class="section level2">
+<h2><span class="header-section-number">1.2</span> Continuous</h2>
+<table style="width:100%;">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="7%" />
+<col width="15%" />
+<col width="15%" />
+<col width="13%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Notation</th>
+<th>Density (PMF/PDF)</th>
+<th>Distribution (CDF)</th>
+<th><span class="math inline">\(\mathbb{E}[X]\)</span></th>
+<th><span class="math inline">\(\text{Var}[X]\)</span></th>
+<th>Notes</th>
+<th>Examples</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Uniform</td>
+<td><span class="math inline">\(X\sim\text{Unif}(a,b)\)</span></td>
+<td><span class="math display">\[\begin{equation} f(x) = \begin{cases} \frac{1}{b-a} &amp; x \in [a,b] \\ 0 &amp; \text{else} \end{cases} \end{equation}\]</span></td>
+<td><span class="math display">\[\begin{equation} F(x) = \begin{cases} \frac{x-a}{b-a} &amp; x \in [a,b] \\ 0 &amp; \text{else} \end{cases} \end{equation}\]</span></td>
+<td><span class="math inline">\(\frac{b+a}{2}\)</span></td>
+<td><span class="math inline">\(\frac{(b-a)^2}{12}\)</span></td>
+<td>Simplest continuous distribution. All outcomes equally likely.</td>
+<td>Pick random point on disk of radius <span class="math inline">\(r\)</span>. <span class="math inline">\(x\)</span> is distance to center. <span class="math inline">\(f(x) = \frac{2x}{r^2}\)</span> when <span class="math inline">\(0 \leq x \leq r\)</span></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>General Normal</td>
+<td><span class="math inline">\(X\sim\text{N}(\mu,\sigma)\)</span></td>
+<td><span class="math inline">\(f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2/2\sigma^2}\)</span></td>
+<td>(convert to standard)</td>
+<td><span class="math inline">\(\mu\)</span></td>
+<td><span class="math inline">\(\sigma^2\)</span></td>
+<td>-</td>
+<td>Biological variables. Exam scores.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Standard Normal</td>
+<td><span class="math inline">\(X\sim\text{N}(0,1)\)</span></td>
+<td><span class="math inline">\(f(x) = \frac{1}{\sqrt{2\pi}} e^{-(x^2)/2}\)</span></td>
+<td><span class="math inline">\(\phi(x)\)</span> (use Z table)</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+<td>Special case of the normal with no parameters.</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Exponential</td>
+<td><span class="math inline">\(X\sim\text{Exp}(\lambda)\)</span></td>
+<td><span class="math display">\[\begin{equation}f(x)=\begin{cases} \lambda e^{-\lambda x} &amp; x &gt; 0 \\ 0 &amp; else \end{cases} \end{equation}\]</span></td>
+<td><span class="math display">\[\begin{equation} F(x) = \begin{cases} 1-e^{-\lambda x} &amp; x &gt; 0 \\ 0 &amp; else \end{cases} \end{equation}\]</span></td>
+<td><span class="math inline">\(\frac{1}{\lambda}\)</span></td>
+<td><span class="math inline">\(\frac{1}{\lambda^2}\)</span></td>
+<td>Memoryless. <span class="math inline">\(\lambda=\)</span> rate. Continuous version of Geom(<span class="math inline">\(p\)</span>).</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gamma</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Chi Square</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sums-of-independent-random-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
