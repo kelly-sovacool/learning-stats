@@ -1,0 +1,5 @@
+Package: stats-ref
+Title: A reference for concepts & equations in introductory statistics.
+Version: 0.0.1
+Imports: bookdown
+Remotes: rstudio/bookdown
