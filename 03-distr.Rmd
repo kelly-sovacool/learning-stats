@@ -2,7 +2,7 @@
 
 ## Discrete
 
-CDF: $\displaystyle\sum_{k=0}^i p(k)$
+CDF: $F(k) = \displaystyle\sum_{k=0}^i p(k)$
 
 ### Bernoulli
 $X\sim\text{Bern}(p)$
@@ -81,7 +81,7 @@ F(x) &=
 
 - Simplest continuous distribution. 
 - All outcomes equally likely.
-- E.g. pick random point on disk of radius $r$. $x$ is distance to center. $f(x) = \frac{2x}{r^2}$ when $0 \leq x \leq r$.
+- E.g. uniformly pick random point on disk of radius $r$. $x$ is distance to center (not Uniform). $f(x) = \frac{2x}{r^2}$ when $0 \leq x \leq r$. 
 
 ### General Normal
 $X\sim\text{N}(\mu,\sigma)$
@@ -101,18 +101,6 @@ F(x) &= \phi(Z=\frac{x-\mu}{\sigma})
 - E.g. biological variables. 
 - E.g. exam scores.
 
-#### Normal Approximation to the Binomial Distribution
-
-When $X\sim\text{Binom}(n,p)$, $n \rightarrow \infty$, & $p \rightarrow \frac{1}{2}$:
-
-$\mathbb{E}[X] = np = \mu$, $\sigma = \sqrt{np(1-p)}$, $z = \frac{x-np}{\sqrt{np(1-p)}}$
-
-$F_z(a) \rightarrow \phi (a)$
-
-$\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)$
-
-via De Maivre-Laplace Central Limit Theorem
-
 ### Standard Normal 
 $X\sim\text{N}(0,1)$
 
@@ -128,6 +116,17 @@ F(x) &= \phi(x)
 
 - To find CDF, use Z table.
 - Special case of the normal with no parameters.
+
+#### Normal Approximation to the Binomial Distribution
+When $X\sim\text{Binom}(n,p)$, $n \rightarrow \infty$, & $p \rightarrow \frac{1}{2}$:
+
+$\mathbb{E}[X] = np = \mu$, $\sigma = \sqrt{np(1-p)}$, $z = \frac{x-np}{\sqrt{np(1-p)}}$
+
+$F_z(a) \rightarrow \phi (a)$
+
+$\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)$
+
+via De Maivre-Laplace Central Limit Theorem
 
 ### Exponential     
 $X\sim\text{Exp}(\lambda)$
@@ -155,7 +154,6 @@ F(x) &=
 - Continuous version of Geom($p$).
 
 #### Hazard & Survival
-
 Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}$
 
 Density: $f_T(t) = F_T'(t) = -S_T'(t)$
@@ -164,7 +162,6 @@ Hazard: $\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d
 
 
 ### Gamma 
-
 $X\sim\Gamma[\alpha,\lambda]$
 
 $\mathbb{E}[X] = \frac{\alpha}{\lambda}$
@@ -172,7 +169,6 @@ $\mathbb{E}[X] = \frac{\alpha}{\lambda}$
 $\text{Var}[X] = \frac{\alpha}{\lambda^2}$
 
 ### Chi Square 
-
 $X\sim\chi^2[n]$
 
 $\mathbb{E}[X] = n$
@@ -182,7 +178,6 @@ $\text{Var}[X] = 2n$
 - Special case of $\Gamma$ where $\alpha=\frac{n}{2}$ and $\lambda=\frac{1}{2}$.
 
 ## Properties of Density Functions
-
 PMF: $p(k) \quad$ PDF: $f(x)$
 
 - Derivative of the distribution function.
@@ -190,7 +185,6 @@ PMF: $p(k) \quad$ PDF: $f(x)$
 - Integral over its domain is $1$: $\int_a^b f(x)=1$
 
 ## Properties of Distribution Functions
-
 CDF: $F(x)$
 
 - $\lim_{x\rightarrow -\infty} F(x) = 0$
@@ -198,7 +192,6 @@ CDF: $F(x)$
 - Nondecreasing.
 
 ## Parameters
-
 Discrete:    $\mathbb{E}[X] = \mu = \sum_{i=1}^k x_i p_i$ 
 
 Continuous:  $\mathbb{E}[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx$
@@ -212,19 +205,18 @@ $\sigma = \sqrt{\text{Var}[X]}$
 $Z = \frac{x-\mu}{\sigma}$, $Z\sim~\text{N}(0,1)$
 
 ## Distribution of a Function
-
 $X$ is a random variable. $Y=g(x)$ is a function of $X$.
 
 ### Transformation Method
-
 If $Y=g(x)$ is monotonic:
 
 $f_Y(y)=\frac{1}{|g'(x)|}f_X(x)$
 
 Integrate $f_Y$ to find $F_Y$.
 
-### CDF Method
+Note: monotonic = invertible = one-to-one.
 
+### CDF Method
 Must use when $Y=g(x)$ is not monotonic:
 
 $F_Y(y)=\mathbb{P}(Y \leq y) = \mathbb{P}(g(x) \leq y) \rightarrow$ solve for $x$ and frame in terms of $F_X(y)$.

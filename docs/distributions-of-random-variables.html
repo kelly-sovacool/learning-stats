@@ -150,7 +150,7 @@
 <h1><span class="header-section-number">3</span> Distributions of Random Variables</h1>
 <div id="discrete" class="section level2">
 <h2><span class="header-section-number">3.1</span> Discrete</h2>
-<p>CDF: <span class="math inline">\(\displaystyle\sum_{k=0}^i p(k)\)</span></p>
+<p>CDF: <span class="math inline">\(F(k) = \displaystyle\sum_{k=0}^i p(k)\)</span></p>
 <div id="bernoulli" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> Bernoulli</h3>
 <p><span class="math inline">\(X\sim\text{Bern}(p)\)</span></p>
@@ -221,7 +221,7 @@ F(x) &amp;=
 <ul>
 <li>Simplest continuous distribution.</li>
 <li>All outcomes equally likely.</li>
-<li>E.g. pick random point on disk of radius <span class="math inline">\(r\)</span>. <span class="math inline">\(x\)</span> is distance to center. <span class="math inline">\(f(x) = \frac{2x}{r^2}\)</span> when <span class="math inline">\(0 \leq x \leq r\)</span>.</li>
+<li>E.g. uniformly pick random point on disk of radius <span class="math inline">\(r\)</span>. <span class="math inline">\(x\)</span> is distance to center (not Uniform). <span class="math inline">\(f(x) = \frac{2x}{r^2}\)</span> when <span class="math inline">\(0 \leq x \leq r\)</span>.</li>
 </ul>
 </div>
 <div id="general-normal" class="section level3">
@@ -239,14 +239,6 @@ F(x) &amp;= \phi(Z=\frac{x-\mu}{\sigma})
 <li>E.g. biological variables.</li>
 <li>E.g. exam scores.</li>
 </ul>
-<div id="normal-approximation-to-the-binomial-distribution" class="section level4">
-<h4><span class="header-section-number">3.2.2.1</span> Normal Approximation to the Binomial Distribution</h4>
-<p>When <span class="math inline">\(X\sim\text{Binom}(n,p)\)</span>, <span class="math inline">\(n \rightarrow \infty\)</span>, &amp; <span class="math inline">\(p \rightarrow \frac{1}{2}\)</span>:</p>
-<p><span class="math inline">\(\mathbb{E}[X] = np = \mu\)</span>, <span class="math inline">\(\sigma = \sqrt{np(1-p)}\)</span>, <span class="math inline">\(z = \frac{x-np}{\sqrt{np(1-p)}}\)</span></p>
-<p><span class="math inline">\(F_z(a) \rightarrow \phi (a)\)</span></p>
-<p><span class="math inline">\(\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)\)</span></p>
-<p>via De Maivre-Laplace Central Limit Theorem</p>
-</div>
 </div>
 <div id="standard-normal" class="section level3">
 <h3><span class="header-section-number">3.2.3</span> Standard Normal</h3>
@@ -262,6 +254,14 @@ F(x) &amp;= \phi(x)
 <li>To find CDF, use Z table.</li>
 <li>Special case of the normal with no parameters.</li>
 </ul>
+<div id="normal-approximation-to-the-binomial-distribution" class="section level4">
+<h4><span class="header-section-number">3.2.3.1</span> Normal Approximation to the Binomial Distribution</h4>
+<p>When <span class="math inline">\(X\sim\text{Binom}(n,p)\)</span>, <span class="math inline">\(n \rightarrow \infty\)</span>, &amp; <span class="math inline">\(p \rightarrow \frac{1}{2}\)</span>:</p>
+<p><span class="math inline">\(\mathbb{E}[X] = np = \mu\)</span>, <span class="math inline">\(\sigma = \sqrt{np(1-p)}\)</span>, <span class="math inline">\(z = \frac{x-np}{\sqrt{np(1-p)}}\)</span></p>
+<p><span class="math inline">\(F_z(a) \rightarrow \phi (a)\)</span></p>
+<p><span class="math inline">\(\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)\)</span></p>
+<p>via De Maivre-Laplace Central Limit Theorem</p>
+</div>
 </div>
 <div id="exponential" class="section level3">
 <h3><span class="header-section-number">3.2.4</span> Exponential</h3>
@@ -344,6 +344,7 @@ F(x) &amp;=
 <p>If <span class="math inline">\(Y=g(x)\)</span> is monotonic:</p>
 <p><span class="math inline">\(f_Y(y)=\frac{1}{|g&#39;(x)|}f_X(x)\)</span></p>
 <p>Integrate <span class="math inline">\(f_Y\)</span> to find <span class="math inline">\(F_Y\)</span>.</p>
+<p>Note: monotonic = invertible = one-to-one.</p>
 </div>
 <div id="cdf-method" class="section level3">
 <h3><span class="header-section-number">3.6.2</span> CDF Method</h3>
