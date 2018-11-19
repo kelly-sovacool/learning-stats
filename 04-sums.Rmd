@@ -1,5 +1,7 @@
 # Sums of Independent Random Variables
 
+## Distributions
+
 Convolution (CDF): \( F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy \)
 
 Density (PDF): \( f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy \)

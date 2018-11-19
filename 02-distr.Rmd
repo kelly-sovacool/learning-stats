@@ -188,7 +188,15 @@ $\sigma = \sqrt{\text{Var}[X]}$
 
 $Z = \frac{x-\mu}{\sigma}$, $Z\sim~\text{N}(0,1)$
 
-## Hazard & Survival
+## Distribution of a Function
+
+### Transformation Method
+
+$X$ is a random variable. If $g(X)$ is monotonic:
+
+### CDF Method
+
+### Special case: Hazard & Survival
 
 Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}$
 
