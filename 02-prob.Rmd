@@ -2,8 +2,35 @@
 
 ## Axioms
 
+1. $\mathbb{P}(A) \geq 0 \quad \forall A \subset S$
+2. $\mathbb{P}(S) = 1$
+3. If $A \cap B = \emptyset$, then $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B)$
+
 ## Union Rule
+
+$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cup B)$
+
+## De Morgan's Laws
+
+$(A \cup B)^c = A^c \cap B^c$
+
+$(A \cap B)^c = A^c \cup B^c$
 
 ## Conditional Probability
 
+$\mathbb{P}(A|B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}$
+
+$\mathbb{P}(A) = \mathbb{P}(A|B)\mathbb{P}(B) + \mathbb{P}(A|B^c)\mathbb{P}(B^c)$
+
 ## Bayes' Theorem
+
+$\mathbb{P}(B|A) = \frac{\mathbb{P}(A|B)\mathbb{P}(B)}{\mathbb{P}(A)}$
+
+## Independence
+
+$\mathbb{P}(A|B) = \mathbb{P}(A)$
+
+## Counting Examples
+
+- There are $n!$ ways to arrange $n$ distinct elements in an ordered list.
+- There are $6^n$ outcomes for $n$ tosses of a $6$-sided die.
