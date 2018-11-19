@@ -154,6 +154,15 @@ F(x) &=
 - $\lambda=$ rate. 
 - Continuous version of Geom($p$).
 
+#### Hazard & Survival
+
+Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}$
+
+Density: $f_T(t) = F_T'(t) = -S_T'(t)$
+
+Hazard: $\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t)$
+
+
 ### Gamma 
 
 $X\sim\Gamma[\alpha,\lambda]$
@@ -221,11 +230,3 @@ Must use when $Y=g(x)$ is not monotonic:
 $F_Y(y)=\mathbb{P}(Y \leq y) = \mathbb{P}(g(x) \leq y) \rightarrow$ solve for $x$ and frame in terms of $F_X(y)$.
 
 Differentiate $F_Y$ to find $f_Y$.
-
-### Special case: Hazard & Survival
-
-Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}$
-
-Density: $f_T(t) = F_T'(t) = -S_T'(t)$
-
-Hazard: $\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t)$

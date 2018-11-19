@@ -104,7 +104,6 @@
 <li class="chapter" data-level="3.6" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html#distribution-of-a-function"><i class="fa fa-check"></i><b>3.6</b> Distribution of a Function</a><ul>
 <li class="chapter" data-level="3.6.1" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html#transformation-method"><i class="fa fa-check"></i><b>3.6.1</b> Transformation Method</a></li>
 <li class="chapter" data-level="3.6.2" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html#cdf-method"><i class="fa fa-check"></i><b>3.6.2</b> CDF Method</a></li>
-<li class="chapter" data-level="3.6.3" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html#special-case-hazard-survival"><i class="fa fa-check"></i><b>3.6.3</b> Special case: Hazard &amp; Survival</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="joint-distributions.html"><a href="joint-distributions.html"><i class="fa fa-check"></i><b>4</b> Joint Distributions</a><ul>
@@ -287,6 +286,12 @@ F(x) &amp;=
 <li><span class="math inline">\(\lambda=\)</span> rate.</li>
 <li>Continuous version of Geom(<span class="math inline">\(p\)</span>).</li>
 </ul>
+<div id="hazard-survival" class="section level4">
+<h4><span class="header-section-number">3.2.4.1</span> Hazard &amp; Survival</h4>
+<p>Survival: <span class="math inline">\(S_T(t) = \mathbb{P}(T&gt;t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}\)</span></p>
+<p>Density: <span class="math inline">\(f_T(t) = F_T&#39;(t) = -S_T&#39;(t)\)</span></p>
+<p>Hazard: <span class="math inline">\(\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T&#39;(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t)\)</span></p>
+</div>
 </div>
 <div id="gamma" class="section level3">
 <h3><span class="header-section-number">3.2.5</span> Gamma</h3>
@@ -345,12 +350,6 @@ F(x) &amp;=
 <p>Must use when <span class="math inline">\(Y=g(x)\)</span> is not monotonic:</p>
 <p><span class="math inline">\(F_Y(y)=\mathbb{P}(Y \leq y) = \mathbb{P}(g(x) \leq y) \rightarrow\)</span> solve for <span class="math inline">\(x\)</span> and frame in terms of <span class="math inline">\(F_X(y)\)</span>.</p>
 <p>Differentiate <span class="math inline">\(F_Y\)</span> to find <span class="math inline">\(f_Y\)</span>.</p>
-</div>
-<div id="special-case-hazard-survival" class="section level3">
-<h3><span class="header-section-number">3.6.3</span> Special case: Hazard &amp; Survival</h3>
-<p>Survival: <span class="math inline">\(S_T(t) = \mathbb{P}(T&gt;t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}\)</span></p>
-<p>Density: <span class="math inline">\(f_T(t) = F_T&#39;(t) = -S_T&#39;(t)\)</span></p>
-<p>Hazard: <span class="math inline">\(\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T&#39;(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t)\)</span></p>
 
 </div>
 </div>
