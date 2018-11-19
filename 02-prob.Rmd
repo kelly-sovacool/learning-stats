@@ -1,5 +1,7 @@
 # Probability
 
+For the following section, $A$ and $B$ represent events in the sample space $S$.
+
 ## Axioms
 
 1. $\mathbb{P}(A) \geq 0 \quad \forall A \subset S$
@@ -28,7 +30,7 @@ $\mathbb{P}(B|A) = \frac{\mathbb{P}(A|B)\mathbb{P}(B)}{\mathbb{P}(A)}$
 
 ## Independence
 
-$\mathbb{P}(A|B) = \mathbb{P}(A)$
+If events $A$ and $B$ are independent: $\mathbb{P}(A|B) = \mathbb{P}(A)$
 
 ## Counting Examples
 
