@@ -1,2 +1,2 @@
-# learning-stats
-Learning resources for statistics
+# stats-references
+References for learning statistics
