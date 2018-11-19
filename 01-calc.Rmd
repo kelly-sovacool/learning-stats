@@ -20,6 +20,8 @@ $e^{c \ln x} = x^c$
 
 $\int f(x) \pm g(x) dx = \int f(x) dx \pm \int g(x) dx$
 
+$\int x f(x) = x F(x) + f(x)$
+
 ### Integration by substitution
 
 $u = g(x)$
