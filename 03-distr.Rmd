@@ -107,7 +107,9 @@ When $X\sim\text{Binom}(n,p)$, $n \rightarrow \infty$, & $p \rightarrow \frac{1}
 
 $\mathbb{E}[X] = np = \mu$, $\sigma = \sqrt{np(1-p)}$, $z = \frac{x-np}{\sqrt{np(1-p)}}$
 
-$F_z(a) \rightarrow \phi (a) $, $\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)$
+$F_z(a) \rightarrow \phi (a)$
+
+$\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)$
 
 via De Maivre-Laplace Central Limit Theorem
 
