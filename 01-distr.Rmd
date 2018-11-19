@@ -1,21 +1,161 @@
 # Distributions
 
-
 ## Discrete
-| Name            | Notation | Density (PMF/PDF) | Distribution (CDF) | $\mathbb{E}[X]$ | $\text{Var}[X]$ | Notes | Examples |
-| --------------- |---------------|----------|--------------------|--------------------|-----------------|----------|----------|----------|
-| Bernoulli       | $X\sim\text{Bern}(p)$ | \begin{equation} p(x) = \begin{cases} p & x=1 \\ 1-p & x=0 \\ 0 & else \end{cases}\end{equation} | - | $p$ | $p(1-p)$ | - | - |
-| Binomial        | $X\sim\text{Binom}(n,p)$ | $p(k) = \binom{n}{k} p^k (1-p)^{n-k}$ | $\sum_{k=0}^i p(k)$ | $np$ | $np(1-p)$ | - | - |
-| Poisson         | $X\sim\text{Poisson}(\lambda\sim np)$ | $p(k) = e^{-\lambda} \frac{\lambda^k}{k!}$ | - | \( \lambda \) | \( \lambda \) | Approximation to binomial when $n \rightarrow \infty$ and $p \rightarrow 0$. | Number of misprints per page of a book. |
-| Geometric       | $X\sim\text{Geom}(p)$ | $p(k)=(1-p)^{k-1}$ | $F(k)=1-(1-p)^k$ | $\frac{1}{p}$ | $\frac{1-p}{p^2}$ | Memoryless. Experiment with infinite trials; stop at first success. | Flip a coin until heads comes up. |
+
+CDF: $\displaystyle\sum_{k=0}^i p(k)$
+
+### Bernoulli
+$X\sim\text{Bern}(p)$
+
+$\mathbb{E}[X] = p$
+
+$\text{Var}[X] = p(1-p)$
+
+\begin{equation}\begin{aligned} 
+p(x) = 
+\begin{cases} 
+p & x=1 \\ 
+1-p & x=0 \\ 
+0 & else 
+\end{cases}\end{aligned}\end{equation}
+
+### Binomial
+$X\sim\text{Binom}(n,p)$ 
+
+$\mathbb{E}[X] = np$
+
+$\text{Var}[X] = np(1-p)$
+
+$$p(k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+
+### Poisson 
+$X\sim\text{Poisson}(\lambda\sim np)$ 
+
+$\mathbb{E}[X] = \lambda$
+
+$\text{Var}[X] = \lambda$
+
+$$p(k) = e^{-\lambda} \frac{\lambda^k}{k!}$$
+
+- Approximation to binomial when $n \rightarrow \infty$ and $p \rightarrow 0$.
+- E.g. number of misprints per page of a book.
+
+### Geometric     
+$X\sim\text{Geom}(p)$
+
+$\mathbb{E}[X] = \frac{1}{p}$
+
+$\text{Var}[X] = \frac{1-p}{p^2}$
+
+\begin{equation}\begin{aligned}
+p(k) &= (1-p)^{k-1} \\
+\\
+F(k) &= 1-(1-p)^k \\
+\end{aligned}\end{equation}
+
+- Experiment with infinite trials; stop at first success.
+- Memoryless. 
+- E.g. flip a coin until heads comes up.
 
 ## Continuous
 
-| Name            | Notation | Density (PMF/PDF) | Distribution (CDF) | $\mathbb{E}[X]$ | $\text{Var}[X]$ | Notes | Examples |
-| --------------- |---------------|----------|--------------------|--------------------|-----------------|----------|----------|----------|
-| Uniform         | $X\sim\text{Unif}(a,b)$ | \begin{equation} f(x) = \begin{cases} \frac{1}{b-a} & x \in [a,b] \\ 0 & \text{else} \end{cases} \end{equation} | \begin{equation} F(x) = \begin{cases} \frac{x-a}{b-a} & x \in [a,b] \\ 0 & \text{else} \end{cases} \end{equation} | $\frac{b+a}{2}$ | $\frac{(b-a)^2}{12}$ | Simplest continuous distribution. All outcomes equally likely. | Pick random point on disk of radius $r$. $x$ is distance to center. $f(x) = \frac{2x}{r^2}$ when $0 \leq x \leq r$ |
-| General Normal  | $X\sim\text{N}(\mu,\sigma)$ | $f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2/2\sigma^2}$ | (convert to standard) | $\mu$ | $\sigma^2$ | - | Biological variables. Exam scores. |
-| Standard Normal | $X\sim\text{N}(0,1)$ | $f(x) = \frac{1}{\sqrt{2\pi}} e^{-(x^2)/2}$ | $\phi(x)$ (use Z table) | $0$ | $1$ | Special case of the normal with no parameters. | - |
-| Exponential     | $X\sim\text{Exp}(\lambda)$ | \begin{equation}f(x)=\begin{cases} \lambda e^{-\lambda x} & x > 0 \\ 0 & else \end{cases} \end{equation} | \begin{equation} F(x) = \begin{cases} 1-e^{-\lambda x} & x > 0 \\ 0 & else \end{cases} \end{equation} | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$ | Memoryless. $\lambda=$ rate. Continuous version of Geom($p$). | - |
-| Gamma | | | | | | | |
-| Chi Square | | | | | | | |
+### Uniform   
+$X\sim\text{Unif}(a,b)$
+
+$\mathbb{E}[X] = \frac{b+a}{2}$
+
+$\text{Var}[X] = \frac{(b-a)^2}{12}$
+
+\begin{equation}\begin{aligned}
+f(x) &= 
+\begin{cases} 
+\frac{1}{b-a} & x \in [a,b] \\
+0 & \text{else} \\
+\end{cases} \\
+\\
+F(x) &= 
+\begin{cases} 
+\frac{x-a}{b-a} & x \in [a,b] \\ 
+0 & \text{else} 
+\end{cases}\end{aligned}\end{equation}
+
+- Simplest continuous distribution. 
+- All outcomes equally likely.
+- E.g. pick random point on disk of radius $r$. $x$ is distance to center. $f(x) = \frac{2x}{r^2}$ when $0 \leq x \leq r$.
+
+### General Normal
+$X\sim\text{N}(\mu,\sigma)$
+
+$\mathbb{E}[X] = \mu$
+
+$\text{Var}[X] = \sigma^2$
+
+\begin{equation}\begin{aligned}
+f(x) &= \frac{1}{\sqrt{2\pi}\sigma} e^{-(x-\mu)^2/2\sigma^2} \\
+\\
+F(x) &= \phi(Z=\frac{x-\mu}{\sigma})
+\end{aligned}\end{equation}
+
+
+- To find CDF, convert to standard normal, then use Z table.
+- E.g. biological variables. 
+- E.g. exam scores.
+
+### Standard Normal 
+$X\sim\text{N}(0,1)$
+
+$\mathbb{E}[X] = 0$
+
+$\text{Var}[X] = 1$
+
+\begin{equation}\begin{aligned}
+f(x) &= \frac{1}{\sqrt{2\pi}} e^{-(x^2)/2} \\
+\\
+F(x) &= \phi(x)
+\end{aligned}\end{equation}
+
+- To find CDF, use Z table.
+- Special case of the normal with no parameters.
+
+### Exponential     
+$X\sim\text{Exp}(\lambda)$
+
+$\mathbb{E}[X] = \frac{1}{\lambda}$
+
+$\text{Var}[X] = \frac{1}{\lambda^2}$
+
+\begin{equation}\begin{aligned}
+f(x) &=
+\begin{cases} 
+\lambda e^{-\lambda x} & x > 0 \\ 
+0 & else \\
+\end{cases} \\
+\\
+F(x) &= 
+\begin{cases} 
+1-e^{-\lambda x} & x > 0 \\ 
+0 & else 
+\end{cases}
+\end{aligned}\end{equation}  
+
+- Memoryless. 
+- $\lambda=$ rate. 
+- Continuous version of Geom($p$).
+
+### Gamma 
+
+$X\sim\Gamma[\alpha,\lambda]$
+
+$\mathbb{E}[X] = \frac{\alpha}{\lambda}$
+
+$\text{Var}[X] = \frac{\alpha}{\lambda^2}$
+
+### Chi Square 
+
+$X\sim\chi^2[n]$
+
+$\mathbb{E}[X] = n$
+
+$\text{Var}[X] = 2n$
+
+- Special case of $\Gamma$ where $\alpha=\frac{n}{2}$ and $\lambda=\frac{1}{2}$.
