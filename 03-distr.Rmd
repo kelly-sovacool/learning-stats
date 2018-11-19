@@ -177,34 +177,38 @@ $\text{Var}[X] = 2n$
 
 - Special case of $\Gamma$ where $\alpha=\frac{n}{2}$ and $\lambda=\frac{1}{2}$.
 
-## Properties of Density Functions
+## Properties
+
+### Density Functions
 PMF: $p(k) \quad$ PDF: $f(x)$
 
 - Derivative of the distribution function.
 - Nonnegative everywhere.
 - Integral over its domain is $1$: $\int_a^b f(x)=1$
 
-## Properties of Distribution Functions
+### Distribution Functions
 CDF: $F(x)$
 
 - $\lim_{x\rightarrow -\infty} F(x) = 0$
 - $\lim_{x\rightarrow +\infty} F(x) = 1$
 - Nondecreasing.
 
-## Parameters
-Discrete:    $\mathbb{E}[X] = \mu = \sum_{i=1}^k x_i p_i$ 
+### Parameters
+\begin{equation}\begin{aligned}
+\text{Law of total expectation:} \quad \mathbb{E}[X] &= \sum_j \mathbb{E}(E|F_j)\mathbb{P}(F_j)\\
+\\
+\text{Discrete:} \quad \mathbb{E}[X] &= \mu = \sum_{i=1}^k x_i p_i \\
+\\
+\text{Continuous:} \quad \mathbb{E}[X] &= \mu = \int_{-\infty}^{\infty} x f(x) dx \\
+\\
+\text{Var}[X] &= \mathbb{E}(X^2) - \mathbb{E}(X)^2 = \sigma^2 \\
+\\
+\sigma &= \sqrt{\text{Var}[X]} \\
+\\
+Z &= \frac{x-\mu}{\sigma}, \quad Z\sim\text{N}(0,1)
+\end{aligned}\end{equation}
 
-Continuous:  $\mathbb{E}[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx$
-
-Law of total expectation: $\mathbb{E}[X] = \sum_j \mathbb{E}(E|F_j)\mathbb{P}(F_j)$
-
-$\text{Var}[X] = \mathbb{E}(X^2) - \mathbb{E}(X)^2 = \sigma^2$
-
-$\sigma = \sqrt{\text{Var}[X]}$
-
-$Z = \frac{x-\mu}{\sigma}$, $Z\sim~\text{N}(0,1)$
-
-## Distribution of a Function
+## Distributions of Functions
 $X$ is a random variable. $Y=g(x)$ is a function of $X$.
 
 ### Transformation Method
@@ -212,7 +216,7 @@ If $Y=g(x)$ is monotonic:
 
 $f_Y(y)=\frac{1}{|g'(x)|}f_X(x)$
 
-Integrate $f_Y$ to find $F_Y$.
+Derive $g'(x)$ from $g(x)$. Integrate $f_Y$ to find $F_Y$.
 
 Note: monotonic = invertible = one-to-one.
 
