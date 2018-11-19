@@ -190,11 +190,23 @@ $Z = \frac{x-\mu}{\sigma}$, $Z\sim~\text{N}(0,1)$
 
 ## Distribution of a Function
 
+$X$ is a random variable. $Y=g(x)$ is a function of $X$.
+
 ### Transformation Method
 
-$X$ is a random variable. If $g(X)$ is monotonic:
+If $Y=g(x)$ is monotonic:
+
+$f_Y(y)=\frac{1}{|g'(x)|}f_X(x)$
+
+Integrate $f_Y$ to find $F_Y$.
 
 ### CDF Method
+
+Must use when $Y=g(x)$ is not monotonic:
+
+$F_Y(y)=\mathbb{P}(Y \leq y) = \mathbb{P}(g(x) \leq y) \rightarrow$ solve for $x$ and frame in terms of $F_X(y)$.
+
+Differentiate $F_Y$ to find $f_Y$.
 
 ### Special case: Hazard & Survival
 

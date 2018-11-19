@@ -1,14 +1,34 @@
-# Sums of Independent Random Variables
+# Joint Distributions
 
-## Distributions
+$\mathbb{P}(x \in A, y \in B) = \int_A \int_B f(x,y) dy dx$
+
+## Marginals
+
+$\mathbb{P}(x \in A) = \mathbb{P}(x \in A, y \in (-\infty, \infty)) = \int_A \int_{-\infty}^{\infty} f(x,y) dy dx$
+
+$\mathbb{P}(y \in B) = \mathbb{P}(x \in (-\infty, \infty), y \in B) = \int_{-\infty}^{\infty} \int_B  f(x,y) dy dx$
+
+## Independence
+
+$F(x,y)=F_X(x)F_Y(y) \quad \forall x,y$
+
+### Minimum & Maximum
+
+Max: $F_{\text{Max}}(t)=\mathbb{P}(\text{Max} \leq t) = \mathbb{P}(x \leq t, y \leq t) \rightarrow$ use independence $\rightarrow = F_X(t)F_Y(t)$
+
+Min: $1-F_{\text{Max}}$
+
+## Sums of Independent Random Variables
+
+### Distributions
 
 Convolution (CDF): \( F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy \)
 
 Density (PDF): \( f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy \)
 
-## Uniform
+### Uniform
 
-## Normal
+### Normal
 
 The sum of $n$ normal RVs \( \sum_i^n X_i \) is normally distributed with parameters:
 
@@ -18,9 +38,9 @@ The sum of $n$ normal RVs \( \sum_i^n X_i \) is normally distributed with parame
 
 \(\sigma = \sqrt{\sum_i^n \sigma_i^2} \neq \sum_i^n \sqrt{\sigma_i^2} \)
 
-## Gamma
+### Gamma
 
-## Poisson
+### Poisson
 
 \(X_1\sim\text{Poisson}(\lambda_1)\)
 
@@ -32,7 +52,7 @@ The sum of $n$ normal RVs \( \sum_i^n X_i \) is normally distributed with parame
 
 \(\mathbb{P}(X_1+X_2=n) = \frac{1}{n!} e^{-(\lambda_1+\lambda_2)} (\lambda_1 + \lambda_2)^n\)
 
-## Binomial 
+### Binomial 
 
 \(X_1\sim\text{Binom}(n,p)\)
 
@@ -44,5 +64,12 @@ The sum of $n$ normal RVs \( \sum_i^n X_i \) is normally distributed with parame
 
 \(\mathbb{P}(X_1+X_2=k) = \binom{n+m}{k} = \sum_{i=0}^n \binom{n}{i} \binom{m}{k-i}\)
 
-## Geometric
+### Geometric
 
+## Conditional Distributions
+
+## Order Statistics
+
+## Joint Distributions of Functions
+
+### The Jacobian
