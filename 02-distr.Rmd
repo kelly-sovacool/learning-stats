@@ -1,4 +1,4 @@
-# Distributions
+# Distributions of Random Variables
 
 ## Discrete
 
@@ -101,6 +101,16 @@ F(x) &= \phi(Z=\frac{x-\mu}{\sigma})
 - E.g. biological variables. 
 - E.g. exam scores.
 
+#### Normal Approximation to the Binomial Distribution
+
+When $X\sim\text{Binom}(n,p)$, $n \rightarrow \infty$, & $p \rightarrow \frac{1}{2}$:
+
+$\mathbb{E}[X] = np = \mu$, $\sigma = \sqrt{np(1-p)}$, $z = \frac{x-np}{\sqrt{np(1-p)}}$
+
+$F_z(a) \rightarrow \phi (a) $, $\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)$
+
+via De Maivre-Laplace Central Limit Theorem
+
 ### Standard Normal 
 $X\sim\text{N}(0,1)$
 
@@ -159,3 +169,29 @@ $\mathbb{E}[X] = n$
 $\text{Var}[X] = 2n$
 
 - Special case of $\Gamma$ where $\alpha=\frac{n}{2}$ and $\lambda=\frac{1}{2}$.
+
+## Properties of Density Functions
+
+## Properties of Distribution Functions
+
+## Parameters
+
+Discrete:    $\mathbb{E}[X] = \mu = \sum_{i=1}^k x_i p_i$ 
+
+Continuous:  $\mathbb{E}[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx$
+
+Law of total expectation: $\mathbb{E}[X] = \sum_j \mathbb{E}(E|F_j)\mathbb{P}(F_j)$
+
+$\text{Var}[X] = \mathbb{E}(X^2) - \mathbb{E}(X)^2 = \sigma^2$
+
+$\sigma = \sqrt{\text{Var}[X]}$
+
+$Z = \frac{x-\mu}{\sigma}$, $Z\sim~\text{N}(0,1)$
+
+## Hazard & Survival
+
+Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^{-\int_{u=o}^t \lambda(u) du}$
+
+Density: $f_T(t) = F_T'(t) = -S_T'(t)$
+
+Hazard: $ \lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t) $
