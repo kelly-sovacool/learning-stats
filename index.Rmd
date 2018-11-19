@@ -14,6 +14,6 @@ description: "A reference for concepts & equations in introductory statistics."
 
 # Preface {-}
 
-A reference for concepts & equations in introductory statistics.
+A reference for concepts & equations in introductory statistics. The source code is hosted on [GitHub](https://github.com/kelly-sovacool/stats-ref).
 
 I used Sean Kross' [bookdown starter kit](https://github.com/seankross/bookdown-start) to begin creating this R Markdown book.
