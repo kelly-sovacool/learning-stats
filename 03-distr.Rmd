@@ -174,7 +174,19 @@ $\text{Var}[X] = 2n$
 
 ## Properties of Density Functions
 
+PMF: $p(k) \quad$ PDF: $f(x)$
+
+- Derivative of the distribution function.
+- Nonnegative everywhere.
+- Integral over its domain is $1$: $\int_a^b f(x)=1$
+
 ## Properties of Distribution Functions
+
+CDF: $F(x)$
+
+- $\lim_{x\rightarrow -\infty} F(x) = 0$
+- $\lim_{x\rightarrow +\infty} F(x) = 1$
+- Nondecreasing.
 
 ## Parameters
 

@@ -244,7 +244,8 @@ F(x) &amp;= \phi(Z=\frac{x-\mu}{\sigma})
 <h4><span class="header-section-number">3.2.2.1</span> Normal Approximation to the Binomial Distribution</h4>
 <p>When <span class="math inline">\(X\sim\text{Binom}(n,p)\)</span>, <span class="math inline">\(n \rightarrow \infty\)</span>, &amp; <span class="math inline">\(p \rightarrow \frac{1}{2}\)</span>:</p>
 <p><span class="math inline">\(\mathbb{E}[X] = np = \mu\)</span>, <span class="math inline">\(\sigma = \sqrt{np(1-p)}\)</span>, <span class="math inline">\(z = \frac{x-np}{\sqrt{np(1-p)}}\)</span></p>
-<p><span class="math inline">\(F_z(a) \rightarrow \phi (a)\)</span>, <span class="math inline">\(\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)\)</span></p>
+<p><span class="math inline">\(F_z(a) \rightarrow \phi (a)\)</span></p>
+<p><span class="math inline">\(\mathbb{P}(a \leq z \leq b) \approx \phi (b) - \phi (a)\)</span></p>
 <p>via De Maivre-Laplace Central Limit Theorem</p>
 </div>
 </div>
@@ -305,9 +306,21 @@ F(x) &amp;=
 </div>
 <div id="properties-of-density-functions" class="section level2">
 <h2><span class="header-section-number">3.3</span> Properties of Density Functions</h2>
+<p>PMF: <span class="math inline">\(p(k) \quad\)</span> PDF: <span class="math inline">\(f(x)\)</span></p>
+<ul>
+<li>Derivative of the distribution function.</li>
+<li>Nonnegative everywhere.</li>
+<li>Integral over its domain is <span class="math inline">\(1\)</span>: <span class="math inline">\(\int_a^b f(x)=1\)</span></li>
+</ul>
 </div>
 <div id="properties-of-distribution-functions" class="section level2">
 <h2><span class="header-section-number">3.4</span> Properties of Distribution Functions</h2>
+<p>CDF: <span class="math inline">\(F(x)\)</span></p>
+<ul>
+<li><span class="math inline">\(\lim_{x\rightarrow -\infty} F(x) = 0\)</span></li>
+<li><span class="math inline">\(\lim_{x\rightarrow +\infty} F(x) = 1\)</span></li>
+<li>Nondecreasing.</li>
+</ul>
 </div>
 <div id="parameters" class="section level2">
 <h2><span class="header-section-number">3.5</span> Parameters</h2>
