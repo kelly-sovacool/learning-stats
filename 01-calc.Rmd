@@ -1,10 +1,34 @@
 # Calculus Review
 
-## Central Limit Theorem
+## Logarithms
+
+$\log_b a = x \leftrightarrow b^x = a$
+
+$e^{c \ln x} = x^c$
 
 ## Derivative & Integration rules
 
+| Derivative | Integral |
+|------------|----------|
+| $\frac{d}{dx} x^n = nx^{n-1}$ | $\int x^n dx= \frac{x^{n+1}}{n+1}+c$ |
+| $\frac{d}{dx} n^x = n^x \ln x$ | $\int n^x dx = \frac{n^x}{\ln n} + c$ |
+| $\frac{d}{dx} \ln x = \frac{1}{x}$ | $\int \frac{1}{ax+b} dx = \frac{1}{a} \ln|ax+b| +c$ |
+| $\frac{d}{dx} e^x = e^x$ | $\int e^x dx = e^x$ |
+| $\frac{d}{dx} \sin x = cos x$ | $\int \sin x dx = -\cos x + c$ |
+| $\frac{d}{dx} \cos x = -\sin x$ | $\int \cos x dx = \sin x + c$ |
+| $\frac{d}{dx} \tan x = \sec^2 x$ | $\int \tan x = \ln|\sec x| + c$ |
+
+$\int f(x) \pm g(x) dx = \int f(x) dx \pm \int g(x) dx$
+
 ### Integration by substitution
 
+$u = g(x)$
+
+$\int_a^b f(g(x)) g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$
+
 ### Integration by parts
+
+Assign $u$ and $dv$, differentiate $u$ to find $du$, integrate $dv$ to find $v$, then solve:
+
+$\int_a^b u dv = \left[uv\right]_a^b - \int_a^bvdu$
 
