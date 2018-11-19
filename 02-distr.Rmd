@@ -194,4 +194,4 @@ Survival: $S_T(t) = \mathbb{P}(T>t) = 1 - \mathbb{P}(T \leq t) = 1 - F_T(t) = e^
 
 Density: $f_T(t) = F_T'(t) = -S_T'(t)$
 
-Hazard: $ \lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t) $
+Hazard: $\lambda(t) = \frac{f_T(t)}{S_T(t)} = \frac{-S_T'(t)}{S_T(t)} = -\frac{d}{dt} \log S_T(t)$
