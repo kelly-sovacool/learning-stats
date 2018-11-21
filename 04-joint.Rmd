@@ -82,7 +82,7 @@ $\mathbb{E}[X|Y=y] = \displaystyle\int_{-\infty}^\infty x f_{X|Y} (x|y) dx$
 
 $F_{X|Y}(a,y) = \mathbb{P}(X \leq a | Y=y) = \displaystyle\int_{-\infty}^a f_{X|Y}(x|y) dx$
 
-### Bayes' Formula (Continuous)
+### Bayes' Theorem (Continuous)
 
 $f_{X|Y} = \frac{f_{Y|X}(y|x)f_x(x)}{f_Y(y)} = \frac{f_{Y|X}(y|x)f_x(x)}{\int f_{Y|X}(y|x)f_x(x)dx}$
 
