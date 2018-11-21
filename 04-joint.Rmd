@@ -70,9 +70,21 @@ $\mathbb{P}(X_1+X_2=k) = \binom{n+m}{k} = \sum_{i=0}^n \binom{n}{i} \binom{m}{k-
 
 ### Discrete
 
+$P_{X|Y} = \frac{P(x,y)}{P_Y(y)} = \mathbb{P}(X=x|Y=y)$
+
+$\mathbb{E}[X|Y=y] = \displaystyle\sum_x x P_{X|Y}(x|y)$
+
 ### Continuous
 
+$f_{X|Y} = \frac{f(x,y)}{f_Y(y)}$
 
+$\mathbb{E}[X|Y=y] = \displaystyle\int_{-\infty}^\infty x f_{X|Y} (x|y) dx$
+
+$F_{X|Y}(a,y) = \mathbb{P}(X \leq a | Y=y) = \displaystyle\int_{-\infty}^a f_{X|Y}(x|y) dx$
+
+### Bayes' Formula (Continuous)
+
+$f_{X|Y} = \frac{f_{Y|X}(y|x)f_x(x)}{f_Y(y)} = \frac{f_{Y|X}(y|x)f_x(x)}{\int f_{Y|X}(y|x)f_x(x)dx}$
 
 ## Order Statistics
 
