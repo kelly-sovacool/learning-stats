@@ -4,6 +4,10 @@ $\mathbb{P}(x \in A, y \in B) = \int_A \int_B f(x,y) dy dx$
 
 ## Marginals
 
+$f_X = \int f(x,y) dy$
+
+$f_Y = \int f(x,y) dx$
+
 $\mathbb{P}(x \in A) = \mathbb{P}(x \in A, y \in (-\infty, \infty)) = \int_A \int_{-\infty}^{\infty} f(x,y) dy dx$
 
 $\mathbb{P}(y \in B) = \mathbb{P}(x \in (-\infty, \infty), y \in B) = \int_{-\infty}^{\infty} \int_B  f(x,y) dy dx$
@@ -66,7 +70,7 @@ $\mathbb{P}(X_1+X_2=k) = \binom{n+m}{k} = \sum_{i=0}^n \binom{n}{i} \binom{m}{k-
 
 ### Geometric
 
-## Conditional Distributions
+## Conditional Joint Distributions
 
 ### Discrete
 

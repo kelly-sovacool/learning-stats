@@ -122,7 +122,7 @@
 <li class="chapter" data-level="4.3.6" data-path="joint-distributions.html"><a href="joint-distributions.html#binomial-1"><i class="fa fa-check"></i><b>4.3.6</b> Binomial</a></li>
 <li class="chapter" data-level="4.3.7" data-path="joint-distributions.html"><a href="joint-distributions.html#geometric-1"><i class="fa fa-check"></i><b>4.3.7</b> Geometric</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="joint-distributions.html"><a href="joint-distributions.html#conditional-distributions"><i class="fa fa-check"></i><b>4.4</b> Conditional Distributions</a><ul>
+<li class="chapter" data-level="4.4" data-path="joint-distributions.html"><a href="joint-distributions.html#conditional-joint-distributions"><i class="fa fa-check"></i><b>4.4</b> Conditional Joint Distributions</a><ul>
 <li class="chapter" data-level="4.4.1" data-path="joint-distributions.html"><a href="joint-distributions.html#discrete-1"><i class="fa fa-check"></i><b>4.4.1</b> Discrete</a></li>
 <li class="chapter" data-level="4.4.2" data-path="joint-distributions.html"><a href="joint-distributions.html#continuous-1"><i class="fa fa-check"></i><b>4.4.2</b> Continuous</a></li>
 <li class="chapter" data-level="4.4.3" data-path="joint-distributions.html"><a href="joint-distributions.html#bayes-theorem-continuous"><i class="fa fa-check"></i><b>4.4.3</b> Bayes’ Theorem (Continuous)</a></li>
@@ -157,6 +157,8 @@
 <p><span class="math inline">\(\mathbb{P}(x \in A, y \in B) = \int_A \int_B f(x,y) dy dx\)</span></p>
 <div id="marginals" class="section level2">
 <h2><span class="header-section-number">4.1</span> Marginals</h2>
+<p><span class="math inline">\(f_X = \int f(x,y) dy\)</span></p>
+<p><span class="math inline">\(f_Y = \int f(x,y) dx\)</span></p>
 <p><span class="math inline">\(\mathbb{P}(x \in A) = \mathbb{P}(x \in A, y \in (-\infty, \infty)) = \int_A \int_{-\infty}^{\infty} f(x,y) dy dx\)</span></p>
 <p><span class="math inline">\(\mathbb{P}(y \in B) = \mathbb{P}(x \in (-\infty, \infty), y \in B) = \int_{-\infty}^{\infty} \int_B f(x,y) dy dx\)</span></p>
 </div>
@@ -209,8 +211,8 @@
 <h3><span class="header-section-number">4.3.7</span> Geometric</h3>
 </div>
 </div>
-<div id="conditional-distributions" class="section level2">
-<h2><span class="header-section-number">4.4</span> Conditional Distributions</h2>
+<div id="conditional-joint-distributions" class="section level2">
+<h2><span class="header-section-number">4.4</span> Conditional Joint Distributions</h2>
 <div id="discrete-1" class="section level3">
 <h3><span class="header-section-number">4.4.1</span> Discrete</h3>
 <p><span class="math inline">\(P_{X|Y} = \frac{P(x,y)}{P_Y(y)} = \mathbb{P}(X=x|Y=y)\)</span></p>
