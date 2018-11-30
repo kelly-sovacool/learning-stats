@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="calculus-review.html">
-<link rel="next" href="distributions-of-random-variables.html">
+<link rel="prev" href="joint-distributions.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -159,55 +159,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="probability" class="section level1">
-<h1><span class="header-section-number">2</span> Probability</h1>
-<p>For the following section, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> represent events in the sample space <span class="math inline">\(S\)</span>.</p>
-<div id="axioms" class="section level2">
-<h2><span class="header-section-number">2.1</span> Axioms</h2>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(\mathbb{P}(A) \geq 0 \quad \forall A \subset S\)</span></li>
-<li><span class="math inline">\(\mathbb{P}(S) = 1\)</span></li>
-<li>If <span class="math inline">\(A \cap B = \emptyset\)</span>, then <span class="math inline">\(\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B)\)</span></li>
-</ol>
-</div>
-<div id="union-rule" class="section level2">
-<h2><span class="header-section-number">2.2</span> Union Rule</h2>
-<p><span class="math inline">\(\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cup B)\)</span></p>
-</div>
-<div id="de-morgans-laws" class="section level2">
-<h2><span class="header-section-number">2.3</span> De Morgan’s Laws</h2>
-<p><span class="math inline">\((A \cup B)^c = A^c \cap B^c\)</span></p>
-<p><span class="math inline">\((A \cap B)^c = A^c \cup B^c\)</span></p>
-</div>
-<div id="conditional-probability" class="section level2">
-<h2><span class="header-section-number">2.4</span> Conditional Probability</h2>
-<p><span class="math inline">\(\mathbb{P}(A|B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}\)</span></p>
-<p><span class="math inline">\(\mathbb{P}(A) = \mathbb{P}(A|B)\mathbb{P}(B) + \mathbb{P}(A|B^c)\mathbb{P}(B^c)\)</span></p>
-</div>
-<div id="bayes-theorem" class="section level2">
-<h2><span class="header-section-number">2.5</span> Bayes’ Theorem</h2>
-<p><span class="math inline">\(\mathbb{P}(B_j|A) = \frac{\mathbb{P}(A|B_j)\mathbb{P}(B_j)}{\mathbb{P}(A)} = \frac{\mathbb{P}(A|B_j)\mathbb{P}(B_j)}{\sum_{i=1}^k \mathbb{P}(A|B_i)\mathbb{P}(B_i)}\)</span></p>
-</div>
-<div id="independence" class="section level2">
-<h2><span class="header-section-number">2.6</span> Independence</h2>
-<p>If events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent: <span class="math inline">\(\mathbb{P}(A|B) = \mathbb{P}(A)\)</span></p>
-</div>
-<div id="counting-examples" class="section level2">
-<h2><span class="header-section-number">2.7</span> Counting Examples</h2>
-<ul>
-<li>There are <span class="math inline">\(n!\)</span> ways to arrange <span class="math inline">\(n\)</span> distinct elements in an ordered list.</li>
-<li>There are <span class="math inline">\(6^n\)</span> outcomes for <span class="math inline">\(n\)</span> tosses of a <span class="math inline">\(6\)</span>-sided die.</li>
-</ul>
+<div id="expectation" class="section level1">
+<h1><span class="header-section-number">5</span> Expectation</h1>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="calculus-review.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="distributions-of-random-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="joint-distributions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
