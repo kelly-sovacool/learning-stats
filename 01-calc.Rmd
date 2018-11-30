@@ -22,6 +22,10 @@ $\int f(x) \pm g(x) dx = \int f(x) dx \pm \int g(x) dx$
 
 $\int x f(x) = x F(x) + f(x)$
 
+### Quotient Rule 
+
+$\left(\frac{f}{g}\right)^'=\frac{f\:'\cdot g-g'\cdot f}{g^2}$
+
 ### Integration by substitution
 
 $u = g(x)$
@@ -34,3 +38,16 @@ Assign $u$ and $dv$, differentiate $u$ to find $du$, integrate $dv$ to find $v$,
 
 $\int_a^b u dv = \left[uv\right]_a^b - \int_a^bvdu$
 
+## Trigonometry
+
+### SOH CAH TOA
+
+### Basic Identities
+
+### Pythagorean Identities
+
+$\sin^2x + \cos^2x = 1$
+
+$\tan^2x + 1 = \sec^2x$
+
+$1 + \cot^2x = \csc^2x$
