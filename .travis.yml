@@ -2,5 +2,5 @@ language: r
 cache: packages
 
 script:
-  - Rscript -e 'bookdown::render_book("index.rmd", "bookdown::bookdown_site", output_dir="docs")'
+  - Rscript -e 'bookdown::render_book("index.rmd", output_dir="docs")'
   - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
