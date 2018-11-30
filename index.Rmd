@@ -9,11 +9,15 @@ biblio-style: apalike
 link-citations: yes
 github-repo: kelly-sovacool/stats-ref
 #url: 'http\://seankross.com/bookdown-start/'
-description: "A reference for concepts & equations in introductory statistics."
+description: "A reference for concepts & equations in statistics."
+urlcolor: blue
+output_dir: docs
 ---
 
 # Preface {-}
 
-A reference for concepts & equations in introductory statistics. The source code is hosted on [GitHub](https://github.com/kelly-sovacool/stats-ref).
+I started compiling this reference for concepts & equations in statistics while taking an introductory probability theory course at [U-M](https://medicine.umich.edu/dept/computational-medicine-bioinformatics).
 
-I used Sean Kross' [bookdown starter kit](https://github.com/seankross/bookdown-start) to begin creating this R Markdown book.
+You can download this reference as a [PDF file](https://github.com/kelly-sovacool/stats-ref/_book/stats-ref.pdf) for offline viewing.
+
+The source code is hosted on [GitHub](https://github.com/kelly-sovacool/stats-ref).

@@ -6,20 +6,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Stats Reference</title>
-  <meta name="description" content="A reference for concepts &amp; equations in introductory statistics.">
+  <meta name="description" content="A reference for concepts &amp; equations in statistics.">
   <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
   <meta property="og:title" content="Stats Reference" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  <meta property="og:description" content="A reference for concepts &amp; equations in statistics." />
   <meta name="github-repo" content="kelly-sovacool/stats-ref" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Stats Reference" />
   
-  <meta name="twitter:description" content="A reference for concepts &amp; equations in introductory statistics." />
+  <meta name="twitter:description" content="A reference for concepts &amp; equations in statistics." />
   
 
 <meta name="author" content="Kelly Sovacool">
@@ -183,18 +183,20 @@
 <h2><span class="header-section-number">4.3</span> Sums of Independent Random Variables</h2>
 <div id="distributions" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> Distributions</h3>
-<p>Convolution (CDF): $ F_{X+Y}(a) = (X+Y a) = _{-}^F_X (a-y) f_Y (y) dy $</p>
-<p>Density (PDF): $ f_{X+Y} = _{-}^f_X (a-y) f_Y (y) dy $</p>
+<p>Convolution (CDF): <span class="math inline">\(F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy\)</span></p>
+<p>Density (PDF): <span class="math inline">\(f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy\)</span></p>
 </div>
 <div id="uniform-1" class="section level3">
 <h3><span class="header-section-number">4.3.2</span> Uniform</h3>
 </div>
 <div id="normal" class="section level3">
 <h3><span class="header-section-number">4.3.3</span> Normal</h3>
-<p>The sum of <span class="math inline">\(n\)</span> normal RVs $ _i^n X_i $ is normally distributed with parameters:</p>
-<p>$= _i^n _i $</p>
-<p>$^2 = _i^n _i^2 $</p>
-<p>$=  _i^n  $</p>
+<p>The sum of <span class="math inline">\(n\)</span> normal RVs <span class="math inline">\(\sum_i^n X_i\)</span> is normally distributed with parameters:</p>
+<p><span class="math display">\[\begin{aligned}
+\mu &amp;= \sum_i^n \mu_i \\
+\sigma^2 &amp;= \sum_i^n \sigma_i^2 \\
+\sigma &amp;= \sqrt{\sum_i^n \sigma_i^2} \neq \sum_i^n \sqrt{\sigma_i^2} 
+\end{aligned}\]</span></p>
 </div>
 <div id="gamma-1" class="section level3">
 <h3><span class="header-section-number">4.3.4</span> Gamma</h3>
