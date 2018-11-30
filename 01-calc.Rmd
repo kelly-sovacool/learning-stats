@@ -24,7 +24,7 @@ $\int x f(x) = x F(x) + f(x)$
 
 ### Quotient Rule 
 
-$\left(\frac{f}{g}\right)^'=\frac{f\:'\cdot g-g'\cdot f}{g^2}$
+$\frac{d}{dx}(\frac{f( x )}{g( x )}) = \frac{f^\prime( x )g( x ) - f( x )g^\prime( x )}{g^2( x )}$
 
 ### Integration by substitution
 

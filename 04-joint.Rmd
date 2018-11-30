@@ -28,21 +28,21 @@ Min: $1-F_{\text{Max}}$
 
 ### Distributions
 
-Convolution (CDF): $ F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy $
+Convolution (CDF): $F_{X+Y}(a) = \mathbb{P}(X+Y \leq a) = \int_{-\infty}^\infty F_X (a-y) f_Y (y) dy$
 
-Density (PDF): $ f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy $
+Density (PDF): $f_{X+Y} = \int_{-\infty}^\infty f_X (a-y) f_Y (y) dy$
 
 ### Uniform
 
 ### Normal
 
-The sum of $n$ normal RVs $ \sum_i^n X_i $ is normally distributed with parameters:
+The sum of $n$ normal RVs $\sum_i^n X_i$ is normally distributed with parameters:
 
-$\mu = \sum_i^n \mu_i $
-
-$\sigma^2 = \sum_i^n \sigma_i^2 $
-
-$\sigma = \sqrt{\sum_i^n \sigma_i^2} \neq \sum_i^n \sqrt{\sigma_i^2} $
+$$\begin{aligned}
+\mu &= \sum_i^n \mu_i \\
+\sigma^2 &= \sum_i^n \sigma_i^2 \\
+\sigma &= \sqrt{\sum_i^n \sigma_i^2} \neq \sum_i^n \sqrt{\sigma_i^2} 
+\end{aligned}$$
 
 ### Gamma
 
