@@ -18,6 +18,6 @@ output_dir: docs
 
 I started compiling this reference for concepts & equations in statistics while taking an introductory probability theory course at [U-M](https://medicine.umich.edu/dept/computational-medicine-bioinformatics).
 
-You can download this reference as a [PDF file](https://github.com/kelly-sovacool/stats-ref/_book/stats-ref.pdf) for offline viewing.
+You can view the [bookdown site](https://kelly-sovacool.github.io/stats-ref/) or download the [PDF file](https://github.com/kelly-sovacool/stats-ref/raw/master/_book/stats-ref.pdf).
 
 The source code is hosted on [GitHub](https://github.com/kelly-sovacool/stats-ref).
