@@ -1,7 +1,8 @@
 book_filename: "stats-ref"
 chapter_name: "Chapter "
 repo: https://github.com/kelly-sovacool/stats-ref
-output_dir: docs
+output_dir: "docs"
+urlcolor: blue
 #rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-Diving-In.Rmd"]
 #clean: [packages.bib, bookdown.bbl]
 #new_session: yes
