@@ -94,6 +94,12 @@ $f_{X|Y} = \frac{f_{Y|X}(y|x)f_x(x)}{f_Y(y)} = \frac{f_{Y|X}(y|x)f_x(x)}{\int f_
 
 ## Order Statistics
 
-## Joint Distributions of Functions
+## Transformations of Joint Distributions
 
 ### The Jacobian
+
+$(u,v) = G(x,y)$
+
+$\text{Jac}(x,y) = \text{det} \begin{bmatrix} \frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\ \frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}  \end{bmatrix} = \frac{\partial u}{\partial x} \frac{\partial v}{\partial y} - \frac{\partial u}{\partial y} \frac{\partial v}{\partial x}$ 
+
+$f_{u,v}(u,v) = \frac{1}{|\text{Jac}(x,y)|} f_{x,y}(x,y)$
