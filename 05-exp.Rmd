@@ -1,1 +1,33 @@
 # Expectation
+
+## Expectation $\mathb{E}[x]$
+
+$$\begin{aligned}
+\text{Law of total expectation:} \quad \mathbb{E}[X] &= \sum_j \mathbb{E}(E|F_j)\mathbb{P}(F_j)\\
+\\
+\text{Discrete:} \quad \mathbb{E}[X] &= \mu = \sum_{i=1}^k x_i p_i \\
+\\
+\text{Continuous:} \quad \mathbb{E}[X] &= \mu = \int_{-\infty}^{\infty} x f(x) dx \\
+\end{aligned}$$
+
+Conditional expectation: 
+
+$\mathbb{E}[X] = \mathbb{E}(\mathbb{E}[X|Y])$
+
+$\mathbb{E}[XY] = \mathbb{E}(\mathbb{E}[XY|Y]) = \mathbb{E}(Y\mathbb{E}[X|Y])$
+
+## Variance $\text{Var}[x]$
+
+where $a$ is a constant:
+
+$Var(ax) = a^2 var(x)$
+
+$Var(a) = 0$
+
+## Covariance $\text{Cov}[x,y]$
+
+$\text{Cov}(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$
+
+## Correlation Coeffecient $\rho$
+
+$\rho (x,y) = \frac{\text{Cov}(x,y)}{\sqrt{\text{Var}[X]}\sqrt{\text{Var}[Y]}}$
