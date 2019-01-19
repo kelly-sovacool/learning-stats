@@ -57,6 +57,14 @@ F(k) &= 1-(1-p)^k \\
 - Memoryless. 
 - E.g. flip a coin until heads comes up.
 
+### Hypergeometric
+
+pmf
+
+exp
+
+var
+
 ## Continuous
 
 ### Uniform   
