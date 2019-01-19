@@ -2,6 +2,8 @@
 
 $\mathbb{P}(x \in A, y \in B) = \int_A \int_B f(x,y) dy dx$
 
+$\mathbb{E}[XY] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} xy f(x,y) dx dy$
+
 ## Marginals
 
 $f_X = \int f(x,y) dy$
