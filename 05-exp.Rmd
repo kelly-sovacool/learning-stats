@@ -1,6 +1,6 @@
 # Expectation
 
-## Expectation $\mathb{E}[x]$
+## Expectation $\mathbb{E}[x]$
 
 $$\begin{aligned}
 \text{Law of total expectation:} \quad \mathbb{E}[X] &= \sum_j \mathbb{E}(E|F_j)\mathbb{P}(F_j)\\
