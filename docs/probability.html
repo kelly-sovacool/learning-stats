@@ -84,11 +84,12 @@
 <li class="chapter" data-level="2" data-path="probability.html"><a href="probability.html"><i class="fa fa-check"></i><b>2</b> Probability</a><ul>
 <li class="chapter" data-level="2.1" data-path="probability.html"><a href="probability.html#axioms"><i class="fa fa-check"></i><b>2.1</b> Axioms</a></li>
 <li class="chapter" data-level="2.2" data-path="probability.html"><a href="probability.html#union-rule"><i class="fa fa-check"></i><b>2.2</b> Union Rule</a></li>
-<li class="chapter" data-level="2.3" data-path="probability.html"><a href="probability.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.3</b> De Morgan’s Laws</a></li>
-<li class="chapter" data-level="2.4" data-path="probability.html"><a href="probability.html#conditional-probability"><i class="fa fa-check"></i><b>2.4</b> Conditional Probability</a></li>
-<li class="chapter" data-level="2.5" data-path="probability.html"><a href="probability.html#bayes-theorem"><i class="fa fa-check"></i><b>2.5</b> Bayes’ Theorem</a></li>
-<li class="chapter" data-level="2.6" data-path="probability.html"><a href="probability.html#independence"><i class="fa fa-check"></i><b>2.6</b> Independence</a></li>
-<li class="chapter" data-level="2.7" data-path="probability.html"><a href="probability.html#counting-examples"><i class="fa fa-check"></i><b>2.7</b> Counting Examples</a></li>
+<li class="chapter" data-level="2.3" data-path="probability.html"><a href="probability.html#inclusion-exclusion-principle"><i class="fa fa-check"></i><b>2.3</b> Inclusion-Exclusion Principle</a></li>
+<li class="chapter" data-level="2.4" data-path="probability.html"><a href="probability.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.4</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.5" data-path="probability.html"><a href="probability.html#conditional-probability"><i class="fa fa-check"></i><b>2.5</b> Conditional Probability</a></li>
+<li class="chapter" data-level="2.6" data-path="probability.html"><a href="probability.html#bayes-theorem"><i class="fa fa-check"></i><b>2.6</b> Bayes’ Theorem</a></li>
+<li class="chapter" data-level="2.7" data-path="probability.html"><a href="probability.html#independence"><i class="fa fa-check"></i><b>2.7</b> Independence</a></li>
+<li class="chapter" data-level="2.8" data-path="probability.html"><a href="probability.html#counting-examples"><i class="fa fa-check"></i><b>2.8</b> Counting Examples</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html"><i class="fa fa-check"></i><b>3</b> Distributions of Random Variables</a><ul>
 <li class="chapter" data-level="3.1" data-path="distributions-of-random-variables.html"><a href="distributions-of-random-variables.html#discrete"><i class="fa fa-check"></i><b>3.1</b> Discrete</a><ul>
@@ -179,28 +180,32 @@
 </div>
 <div id="union-rule" class="section level2">
 <h2><span class="header-section-number">2.2</span> Union Rule</h2>
-<p><span class="math inline">\(\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cup B)\)</span></p>
+<p><span class="math inline">\(\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)\)</span></p>
+</div>
+<div id="inclusion-exclusion-principle" class="section level2">
+<h2><span class="header-section-number">2.3</span> Inclusion-Exclusion Principle</h2>
+<p><span class="math inline">\(\mathbb{P}(A \cup B \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap B) - \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C)\)</span></p>
 </div>
 <div id="de-morgans-laws" class="section level2">
-<h2><span class="header-section-number">2.3</span> De Morgan’s Laws</h2>
+<h2><span class="header-section-number">2.4</span> De Morgan’s Laws</h2>
 <p><span class="math inline">\((A \cup B)^c = A^c \cap B^c\)</span></p>
 <p><span class="math inline">\((A \cap B)^c = A^c \cup B^c\)</span></p>
 </div>
 <div id="conditional-probability" class="section level2">
-<h2><span class="header-section-number">2.4</span> Conditional Probability</h2>
+<h2><span class="header-section-number">2.5</span> Conditional Probability</h2>
 <p><span class="math inline">\(\mathbb{P}(A|B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}\)</span></p>
 <p><span class="math inline">\(\mathbb{P}(A) = \mathbb{P}(A|B)\mathbb{P}(B) + \mathbb{P}(A|B^c)\mathbb{P}(B^c)\)</span></p>
 </div>
 <div id="bayes-theorem" class="section level2">
-<h2><span class="header-section-number">2.5</span> Bayes’ Theorem</h2>
+<h2><span class="header-section-number">2.6</span> Bayes’ Theorem</h2>
 <p><span class="math inline">\(\mathbb{P}(B_j|A) = \frac{\mathbb{P}(A|B_j)\mathbb{P}(B_j)}{\mathbb{P}(A)} = \frac{\mathbb{P}(A|B_j)\mathbb{P}(B_j)}{\sum_{i=1}^k \mathbb{P}(A|B_i)\mathbb{P}(B_i)}\)</span></p>
 </div>
 <div id="independence" class="section level2">
-<h2><span class="header-section-number">2.6</span> Independence</h2>
+<h2><span class="header-section-number">2.7</span> Independence</h2>
 <p>If events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent: <span class="math inline">\(\mathbb{P}(A|B) = \mathbb{P}(A)\)</span></p>
 </div>
 <div id="counting-examples" class="section level2">
-<h2><span class="header-section-number">2.7</span> Counting Examples</h2>
+<h2><span class="header-section-number">2.8</span> Counting Examples</h2>
 <ul>
 <li>There are <span class="math inline">\(n!\)</span> ways to arrange <span class="math inline">\(n\)</span> distinct elements in an ordered list.</li>
 <li>There are <span class="math inline">\(6^n\)</span> outcomes for <span class="math inline">\(n\)</span> tosses of a <span class="math inline">\(6\)</span>-sided die.</li>

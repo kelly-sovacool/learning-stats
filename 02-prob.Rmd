@@ -10,7 +10,11 @@ For the following section, $A$ and $B$ represent events in the sample space $S$.
 
 ## Union Rule
 
-$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cup B)$
+$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
+
+## Inclusion-Exclusion Principle
+
+$\mathbb{P}(A \cup B \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap B) - \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C)$
 
 ## De Morgan's Laws
 
