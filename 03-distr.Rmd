@@ -57,13 +57,13 @@ F(k) &= 1-(1-p)^k \\
 - Memoryless. 
 - E.g. flip a coin until heads comes up.
 
+### Negative Binomial
+
+TO-DO
+
 ### Hypergeometric
 
-pmf
-
-exp
-
-var
+TO-DO
 
 ## Continuous
 
