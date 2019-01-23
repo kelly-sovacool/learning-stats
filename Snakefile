@@ -1,12 +1,14 @@
 import os
 
 input_files = [file for file in os.listdir() if file.endswith('.Rmd') or file.endswith('.yaml')]
+site_cmd = 'bookdown::render_book("index.Rmd", output_dir="docs")'
+pdf_cmd = 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
 
 rule all:
 	input:	
 		'docs/index.html',
 		'docs/style.css',
-		'_book/stats-ref.pdf'
+		'docs/stats-ref.pdf'
 
 rule compile_site:
 	input:
@@ -15,12 +17,13 @@ rule compile_site:
 		'docs/index.html',
 		'docs/style.css',
 	shell:
-		"Rscript -e '{}'".format('bookdown::render_book("index.rmd", output_dir="docs")')
+		f"Rscript -e '{site_cmd}'"
 
 rule compile_pdf:
 	input:
 		input_files
 	output:
-		'_book/stats-ref.pdf'
+		'docs/stats-ref.pdf'
 	shell:
-		"Rscript -e '{}'; mv _book/_main.pdf _book/stats-ref.pdf ".format('bookdown::render_book("index.Rmd", "bookdown::pdf_book")')
+		f"Rscript -e '{pdf_cmd}'; mv _book/_main.pdf docs/stats-ref.pdf ; "
+		"rmdir _book"
