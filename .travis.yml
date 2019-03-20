@@ -1,6 +1,9 @@
-language: r
-cache: packages
-
-script:
-  - Rscript -e 'bookdown::render_book("index.rmd", output_dir="docs")'
-  - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+matrix:
+    include:
+        - language: R            
+          script:
+            - Rscript -e 'bookdown::render_book("index.Rmd", output_dir="docs")'
+            - Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+        - language: bash
+          script:
+            - bash 'mv _book/_main.pdf docs/stats-ref.pdf' 
